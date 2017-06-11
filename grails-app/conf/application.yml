@@ -2,7 +2,7 @@
 grails:
     profile: web-plugin
     codegen:
-        defaultPackage: elasticsearch
+        defaultPackage: grais.plugins.elasticsearch
     spring:
         transactionManagement:
             proxies: false

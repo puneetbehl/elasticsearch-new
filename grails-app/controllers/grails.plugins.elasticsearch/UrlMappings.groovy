@@ -1,4 +1,4 @@
-package elasticsearch
+package grails.plugins.elasticsearch
 
 class UrlMappings {
 
