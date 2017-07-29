@@ -35,6 +35,8 @@ dependencies {
     compile "org.grails.plugins:cache"
     compile "org.grails.plugins:scaffolding"
     compile "org.elasticsearch:elasticsearch:5.5.1"
+    compile "org.elasticsearch.client:transport:5.5.1"
+    compile "org.apache.logging.log4j:log4j-to-slf4j:2.8.2"
     compile "org.elasticsearch:elasticsearch-groovy:5.5.1-SNAPSHOT"
     console "org.grails:grails-console"
     profile "org.grails.profiles:web-plugin"
@@ -48,7 +50,7 @@ dependencies {
 }
 
 bootRun {
-    jvmArgs('-Dspring.output.ansi.enabled=always')
+    jvmArgs = ['-Dspring.output.ansi.enabled=always', "-Des.path.home=/Users/puneet/elasticsearch-5.0.0"]
     addResources = true
 }
 // enable if you wish to package this plugin as a standalone application
